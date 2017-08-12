@@ -9,11 +9,19 @@
 import UIKit
 
 class ChannelVC: UIViewController {
+    
+    @IBOutlet weak var loginBtn: UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         //how far the revealViewController is from the right side when it slides over
         self.revealViewController().rearViewRevealWidth = self.view.frame.size.width - 60
     }
+    
+    @IBAction func loginBtnPressed(_ sender: Any) {
+        performSegue(withIdentifier: TO_LOGIN, sender: nil)
+    }
+    
 
 }
