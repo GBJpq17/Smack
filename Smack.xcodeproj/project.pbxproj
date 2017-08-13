@@ -14,6 +14,7 @@
 		3926A7D11F3D4915006CC2B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3926A7CF1F3D4915006CC2B8 /* LaunchScreen.storyboard */; };
 		3970E3CD1F3E586400DF0593 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AE709E1F3E4DAD00D398C0 /* SWRevealViewController.m */; };
 		3984E0B91F409326008DA4C6 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3984E0B81F409326008DA4C6 /* AuthService.swift */; };
+		3984E0BB1F40A085008DA4C6 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3984E0BA1F40A085008DA4C6 /* RoundedButton.swift */; };
 		39AE708E1F3E468800D398C0 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE708D1F3E468800D398C0 /* ChatVC.swift */; };
 		39AE70901F3E469E00D398C0 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE708F1F3E469E00D398C0 /* ChannelVC.swift */; };
 		39EDA1051F3EACE500CA732D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EDA1041F3EACE500CA732D /* Constants.swift */; };
@@ -31,6 +32,7 @@
 		3926A7D01F3D4915006CC2B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3926A7D21F3D4915006CC2B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3984E0B81F409326008DA4C6 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		3984E0BA1F40A085008DA4C6 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		39AE708D1F3E468800D398C0 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		39AE708F1F3E469E00D398C0 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		39AE70911F3E4A1100D398C0 /* SocketIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SocketIO.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Smack-fmziconqazbfpfaasjfprfylylmd/Build/Products/Debug-iphonesimulator/Socket.IO-Client-Swift/SocketIO.framework"; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				391102351F3E5A1D008F6490 /* GradientView.swift */,
+				3984E0BA1F40A085008DA4C6 /* RoundedButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39AE708E1F3E468800D398C0 /* ChatVC.swift in Sources */,
+				3984E0BB1F40A085008DA4C6 /* RoundedButton.swift in Sources */,
 				39AE70901F3E469E00D398C0 /* ChannelVC.swift in Sources */,
 				39EDA1091F3EB31500CA732D /* CreateAccountVC.swift in Sources */,
 				3984E0B91F409326008DA4C6 /* AuthService.swift in Sources */,
