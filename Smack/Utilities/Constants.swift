@@ -13,6 +13,12 @@ import Foundation
 //This is a very simple closure type
 typealias CompletionHandler = (_ Success: Bool) -> ()
 
+//Color
+let smackPurplePlaceholder = #colorLiteral(red: 0.2588235294, green: 0.3294117647, blue: 0.7254901961, alpha: 0.5)
+
+//Notification Constants
+let NOTIF_USER_DATA_DID_CHANGE = Notification.Name("notifUserDataChanged")
+
 //URL Constants
 let BASE_URL = "https://smackioschat.herokuapp.com/v1/"
 let URL_REGISTER = "\(BASE_URL)account/register"
