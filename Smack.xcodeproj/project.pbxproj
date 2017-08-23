@@ -17,6 +17,8 @@
 		3970E3CD1F3E586400DF0593 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AE709E1F3E4DAD00D398C0 /* SWRevealViewController.m */; };
 		3984E0B91F409326008DA4C6 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3984E0B81F409326008DA4C6 /* AuthService.swift */; };
 		3984E0BB1F40A085008DA4C6 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3984E0BA1F40A085008DA4C6 /* RoundedButton.swift */; };
+		3996F61D1F4CFCF9004A8AF0 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3996F61B1F4CFCF9004A8AF0 /* ProfileVC.swift */; };
+		3996F61E1F4CFCF9004A8AF0 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3996F61C1F4CFCF9004A8AF0 /* ProfileVC.xib */; };
 		39AE708E1F3E468800D398C0 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE708D1F3E468800D398C0 /* ChatVC.swift */; };
 		39AE70901F3E469E00D398C0 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE708F1F3E469E00D398C0 /* ChannelVC.swift */; };
 		39BA46101F43C39F002F5FFE /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA460F1F43C39F002F5FFE /* CircleImage.swift */; };
@@ -39,6 +41,8 @@
 		395D293A1F427BC0000D0296 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
 		3984E0B81F409326008DA4C6 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		3984E0BA1F40A085008DA4C6 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		3996F61B1F4CFCF9004A8AF0 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		3996F61C1F4CFCF9004A8AF0 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		39AE708D1F3E468800D398C0 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		39AE708F1F3E469E00D398C0 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		39AE70911F3E4A1100D398C0 /* SocketIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SocketIO.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Smack-fmziconqazbfpfaasjfprfylylmd/Build/Products/Debug-iphonesimulator/Socket.IO-Client-Swift/SocketIO.framework"; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 		3926A7C51F3D4915006CC2B8 /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				3996F61F1F4CFD1B004A8AF0 /* XIBs */,
 				3984E0B71F409310008DA4C6 /* Services */,
 				39EDA1031F3EACCB00CA732D /* Utilities */,
 				39A5AB9B1F3D4FC800A62518 /* Supporting Files */,
@@ -121,6 +126,14 @@
 				39C3ACDE1F41221E002D9A6B /* UserDataService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		3996F61F1F4CFD1B004A8AF0 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				3996F61C1F4CFCF9004A8AF0 /* ProfileVC.xib */,
+			);
+			path = XIBs;
 			sourceTree = "<group>";
 		};
 		39A5AB981F3D4EA700A62518 /* View */ = {
@@ -149,6 +162,7 @@
 				39EDA1061F3EB13900CA732D /* LoginVC.swift */,
 				39EDA1081F3EB31500CA732D /* CreateAccountVC.swift */,
 				395D29381F4279DC000D0296 /* AvatarPickerVC.swift */,
+				3996F61B1F4CFCF9004A8AF0 /* ProfileVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -244,6 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3996F61E1F4CFCF9004A8AF0 /* ProfileVC.xib in Resources */,
 				3926A7D11F3D4915006CC2B8 /* LaunchScreen.storyboard in Resources */,
 				3926A7CE1F3D4915006CC2B8 /* Assets.xcassets in Resources */,
 				3926A7CC1F3D4915006CC2B8 /* Main.storyboard in Resources */,
@@ -305,6 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3996F61D1F4CFCF9004A8AF0 /* ProfileVC.swift in Sources */,
 				39AE708E1F3E468800D398C0 /* ChatVC.swift in Sources */,
 				395D29391F4279DC000D0296 /* AvatarPickerVC.swift in Sources */,
 				3984E0BB1F40A085008DA4C6 /* RoundedButton.swift in Sources */,
