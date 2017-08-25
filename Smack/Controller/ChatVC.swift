@@ -11,6 +11,8 @@ import UIKit
 class ChatVC: UIViewController {
     
     @IBOutlet weak var menuBtn: UIButton!
+    @IBOutlet weak var channelNameLabel: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,16 +24,38 @@ class ChatVC: UIViewController {
         //this feature allows the user to revert the chatVC to its normal position bu tapping the chatVC
         //screen
         self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
+        NotificationCenter.default.addObserver(self, selector: #selector(ChatVC.userDataDidChange(_:)), name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(ChatVC.channelSelected(_:)), name: NOTIF_CHANNELS_SELECTED, object: nil)
         
         if AuthService.instance.isLoggedIn {
             AuthService.instance.findUserByEmail(completion: { (success) in
                 NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
             })
         }
-        
-        MessageService.instance.findAllChannel { (success) in
-            
+    }
+    
+    @objc func userDataDidChange(_ notif: Notification) {
+        if AuthService.instance.isLoggedIn {
+            onLoginGetMessages()
+        } else {
+            channelNameLabel.text = "Please Log In"
         }
     }
-
+    
+    func onLoginGetMessages() {
+        MessageService.instance.findAllChannel { (success) in
+            if success {
+                //to do stuff with channels
+            }
+        }
+    }
+    
+    @objc func channelSelected(_ notif: Notification) {
+        updateWithChannel()
+    }
+    
+    func updateWithChannel() {
+        let channelName = MessageService.instance.selectedChannel?.channelTitle ?? ""
+        channelNameLabel.text = "#\(channelName)"
+    }
 }
