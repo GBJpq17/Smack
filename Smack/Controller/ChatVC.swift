@@ -22,6 +22,12 @@ class ChatVC: UIViewController {
         //this feature allows the user to revert the chatVC to its normal position bu tapping the chatVC
         //screen
         self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
+        
+        if AuthService.instance.isLoggedIn {
+            AuthService.instance.findUserByEmail(completion: { (success) in
+                NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
+            })
+        }
     }
 
 }

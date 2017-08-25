@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -238,6 +238,9 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginPressed:" destination="v50-JD-ZMU" eventType="touchUpInside" id="1x7-zn-0jU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNo-Yp-hT8">
                                 <rect key="frame" x="62" y="336" width="251" height="30"/>
@@ -256,10 +259,10 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="O2Y-C9-VeU">
                                 <rect key="frame" x="62.5" y="160" width="250" height="86"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V9k-7q-b9F">
-                                        <rect key="frame" x="0.0" y="0.0" width="79.5" height="20"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V9k-7q-b9F">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="20"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="79.5" id="zSr-je-uIu"/>
+                                            <constraint firstAttribute="width" constant="250" id="zSr-je-uIu"/>
                                         </constraints>
                                         <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
@@ -274,9 +277,9 @@
                                         </constraints>
                                     </view>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xc1-SF-2k9">
-                                        <rect key="frame" x="0.0" y="50" width="78.5" height="20"/>
+                                        <rect key="frame" x="0.0" y="50" width="250" height="20"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="78.5" id="7Wk-05-qS0"/>
+                                            <constraint firstAttribute="width" constant="250" id="7Wk-05-qS0"/>
                                         </constraints>
                                         <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
@@ -292,10 +295,16 @@
                                     </view>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Oyk-G9-9fX">
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="iNT-fR-0LK" firstAttribute="top" secondItem="0Mi-U6-hlN" secondAttribute="top" constant="8" id="AG3-fk-gXJ"/>
+                            <constraint firstItem="Oyk-G9-9fX" firstAttribute="centerX" secondItem="sxM-QO-3gJ" secondAttribute="centerX" id="Acu-yA-m70"/>
+                            <constraint firstItem="Oyk-G9-9fX" firstAttribute="centerY" secondItem="sxM-QO-3gJ" secondAttribute="centerY" constant="-100" id="AeR-DS-Vdj"/>
                             <constraint firstItem="0Mi-U6-hlN" firstAttribute="trailing" secondItem="iNT-fR-0LK" secondAttribute="trailing" constant="16" id="Ddm-pb-Jws"/>
                             <constraint firstItem="JN6-6o-ih2" firstAttribute="centerX" secondItem="sxM-QO-3gJ" secondAttribute="centerX" id="SVZ-sc-Twb"/>
                             <constraint firstItem="O2Y-C9-VeU" firstAttribute="centerX" secondItem="sxM-QO-3gJ" secondAttribute="centerX" id="Wse-Eh-nSl"/>
@@ -309,6 +318,9 @@
                         <viewLayoutGuide key="safeArea" id="0Mi-U6-hlN"/>
                     </view>
                     <connections>
+                        <outlet property="emailText" destination="V9k-7q-b9F" id="esl-Kk-SAj"/>
+                        <outlet property="passwordText" destination="xc1-SF-2k9" id="w63-Uo-P6r"/>
+                        <outlet property="spinner" destination="Oyk-G9-9fX" id="2VX-dF-kdL"/>
                         <segue destination="VXL-79-iEc" kind="show" identifier="toCreateAccount" id="Huh-pF-uTi"/>
                     </connections>
                 </viewController>
