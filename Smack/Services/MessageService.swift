@@ -28,7 +28,6 @@ class MessageService {
                         
                         self.channels.append(channel)
                     }
-                    //print(self.channels[0].channelTitle)
                     completion(true)
                 }
             } else {
