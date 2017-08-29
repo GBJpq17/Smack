@@ -55,7 +55,6 @@ class UserDataService {
         let afloat = CGFloat(aUnwrapped.doubleValue)
         
         let newUIColor = UIColor(red: rfloat, green: gfloat, blue: bfloat, alpha: afloat)
-        
         return newUIColor
     }
     

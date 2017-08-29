@@ -15,7 +15,6 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     
     @IBAction func prepareForUnwind(segue: UIStoryboardSegue) {
-        
     }
 
     override func viewDidLoad() {
@@ -117,5 +116,4 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         NotificationCenter.default.post(name: NOTIF_CHANNELS_SELECTED, object: nil)
         self.revealViewController().revealToggle(animated: true)
     }
-    
 }

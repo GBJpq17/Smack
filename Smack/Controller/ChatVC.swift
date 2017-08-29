@@ -19,7 +19,6 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var isTyping = false
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         view.bindToKeyboard()
@@ -100,7 +99,6 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             }
             isTyping = true
         }
-        
     }
     
     
@@ -181,5 +179,4 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             })
         }
     }
-    
 }
