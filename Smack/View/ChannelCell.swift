@@ -35,5 +35,5 @@ class ChannelCell: UITableViewCell {
                 channelName.font = UIFont(name: "HelveticaNeue-Bold", size: 22)
             }
         }
-    
+    }
 }
